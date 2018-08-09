@@ -1,0 +1,25 @@
+{
+  "name": "translab",
+  "version": "0.0.1",
+  "description": "App web para visualizar saldo y calcular tarifas en la tarjeta Bip de transantiago",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulaAraya/transLab.git"
+  },
+  "keywords": [
+    "Bip",
+    "Saldo",
+    "Translab",
+    "Transantiago"
+  ],
+  "author": "Paula Araya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulaAraya/transLab/issues"
+  },
+  "homepage": "https://github.com/PaulaAraya/transLab#readme"
+}
