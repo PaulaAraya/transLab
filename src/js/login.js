@@ -28,11 +28,12 @@ window.validateEmail = function(email){
 
 window.validatePassword = function (password) {
   //validar numero
-  if (password.length >= 8){
-    return true;
+  if (password.length > 8){
+    return false;
   }
-}
+  if (password.length === /[a-z]/g) {
+    return false;
+  }
+  return true;
+};
 
-window.validateCard = function(card){
-
-}

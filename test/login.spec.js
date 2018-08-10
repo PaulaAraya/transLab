@@ -1,6 +1,6 @@
 const assert = require('chai').assert;
 global.window = global;
-require('../src/js/validate'); //Sólo enlaza el archivo, parecido al script de html
+require('../src/js/login'); //Sólo enlaza el archivo, parecido al script de html
 
 describe('Validar emails', () => { //Describe lo que habrá dentro de cada función
   describe('Debería verificar si existe el arroba', () => {
@@ -38,7 +38,9 @@ describe('Validar contraseña', () => { //Describe lo que habrá dentro de cada 
     it('Debería la contraseña aceptar solo números.', () => { 
       assert.equal(validatePassword(/[0-9]/g), true); //solo numero
       assert.equal(validatePassword(/[a-z]/g), false); //sin letras
-      assert.equal(validatePassword(''), false); //sin sin simbolos
     });
   });
 });
+
+
+
