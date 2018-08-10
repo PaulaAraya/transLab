@@ -1,0 +1,74 @@
+/* CARACTERISTICA GENERALES*/
+.container-fluid{
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+button {
+  text-align: center;
+  background-color: #f6a800;
+  color: #3e3f41;
+}
+
+/*LOGIN*/
+#logInPage{
+  background-color: #3e3f41;
+  width: 100%;
+}
+
+#logo {
+  margin: 20%;
+  width: 60%;
+  height: auto;
+  align-self: center;
+}
+
+#login{
+  width: 90%;
+  margin: 5%;
+  padding:5%;
+}
+
+.color{
+  color:#f6a800;
+}
+
+/*HOME*/
+.btnHome{
+  margin-left : 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  width: 90%;
+  height: auto;
+  color: white;
+}
+
+#homePage{
+  background-color: #dddee0;
+  height: 100vh;
+  padding-top: 33.3%;
+}
+
+/*PERFIL*/
+#porfilePage{
+  background-color: #dddee0;
+  height: 100vh;
+}
+
+#porfilePhoto{
+  background-color: #f6a800;
+  height: 40vh;
+}
+
+/* VER SALDO*/
+#calculatorPage{
+  background-color: #dddee0;
+  height: 100vh;
+}
+.cardSave{
+  margin-bottom: 5%;
+  width: 100%;
+  height: auto;
+}
