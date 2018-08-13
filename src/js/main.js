@@ -4,3 +4,4 @@ const btnCalculate = document.getElementById('btnCalculate');
 
 btnAddCard.addEventListener('click', addCardInput);
 btnCalculate.addEventListener('click', selectCard);
+

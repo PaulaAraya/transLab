@@ -14,17 +14,41 @@
   <link rel="stylesheet" href="../trans-lab/css/style.css">
   <title>Trans Lab</title>
 </head>
+
 <body>
-  <nav>
-    <div class="pos-f-t">
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </div>
-  </nav>
+  <!-- 
+  <div class="pos-f-t" id="navContainer">
+
+    <nav class="navbar navbar-dark" style="background-color: #3e3f41;">
+      <button onclick="toggleMenu()" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <nav id="sideMenu" class="nav flex-column float-left menu menu_closed" style="background-color: #FCFCFC; z-index: 100">
+      <div onclick="toggleMenu()" class="close_button text-secondary" data-target="#menuContent">
+        <span aria-hidden="true">&times;</span>
+      </div>
+      <div class="menu_content" id="menuContent">
+        <a class="nav-link active text-secondary" href="#" onclick="soldPage(event)">
+          <i class="far fa-user"> </i> VER SALDO</a>
+
+        <a class="nav-link text-secondary" href="#" onclick="calculatorPage(event)">
+          <i class="far fa-envelope"> </i> CALCULAR TARIFA </a>
+
+        <a class="nav-link text-secondary" href="#" onclick="porfilePage(event)">
+          <i class="fas fa-utensils"></i> PERFIL </a>
+
+        <a class="nav-link text-secondary" href="#" onclick="FaqPage(event)">
+          <i class="fas fa-utensils"></i> PREGUNTA FRECUENTES </a>
+
+        <a class="nav-link text-secondary" href="#" onclick="chatPage(event)">
+          <i class="fas fa-sign-out-alt"></i>
+          <p id="out" style="text-align: left">
+            <p>Sign Out</p></a>
+      </div>
+    </nav>
+  </div>  -->
   <div class="container-fluid">
     <!-- login -->
     <section class="page" id="logInPage">
@@ -91,7 +115,7 @@
         <div class="col-sm-4"></div>
       </div>
     </section>
-    
+
     <!-- Calculadora de Saldo -->
     <section class="page" id="calculatorPage">
       <div class="row align-items-center">
@@ -153,6 +177,7 @@
       crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="src/js/card.js"></script>
+    <script src="src/js/menu.js"></script>
     <script src="src/js/controller.js"></script>
     <script src="src/js/data.js"></script>
     <script src="src/js/login.js"></script>
