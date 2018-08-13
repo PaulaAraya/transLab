@@ -70,7 +70,7 @@
       </div>
 
     </section>
-    <!-- Perfil -->
+    <!-- Perfil Agregar tarjeta -->
     <section class="page" id="porfilePage">
       <div id="porfilePhoto">
       </div>
@@ -79,7 +79,7 @@
           <form>
             <div class="form-group" id="card">
               <input type="text" class="form-control rounded-0" id="cardNumber" aria-describedby="emailHelp" placeholder="Numero de tarjeta">
-              <button type="submit" class="btn rounded-0" style="width: 100%;">AGREGAR TARJETA</button>
+              <button type="submit" id="addCard" class="btn rounded-0" style="width: 100%;">AGREGAR TARJETA</button>
               <div class="form-group" id="cardPrint">
                 <input class="form-control-sm rounded-0 cardSave" type="text" readonly>
                 <input class="form-control-sm rounded-0 cardSave" type="text" readonly>
@@ -104,10 +104,10 @@
               <form>
                 <label class="my-1 mr-2">Tarifa</label>
                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                  <option selected>Choose</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option selected>Tarifa</option>
+                  <option value="alto">Horario Alto: $760</option>
+                  <option value="medio">Horario Medio: $680</option>
+                  <option value="3">Horario Bajo: $630</option>
                 </select>
               </form>
             </div>
@@ -115,10 +115,10 @@
               <form>
                 <label class="my-1 mr-2">Tarjeta</label>
                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                  <option selected>Choose</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option selected>Nº tarjeta</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
                 </select>
               </form>
             </div>
@@ -127,7 +127,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-sm-4 offset-sm-4">
-          <button type="submit" class="btn">CALCULAR</button>
+          <button type="submit" id="btnCalculate" class="btn">CALCULAR</button>
         </div>
         <div class="col-sm-4"></div>
       </div>

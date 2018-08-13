@@ -1,5 +1,6 @@
 //Captura datos de API
 let bipCards = null;
+let id = 
 
 fetch('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={id}')
 .then(response => response.json())
