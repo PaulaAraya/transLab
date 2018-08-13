@@ -9,7 +9,8 @@
 button {
   text-align: center;
   background-color: #f6a800;
-  color: #3e3f41;
+  color: white;
+  font-size: 10px;
 }
 
 /*LOGIN*/
@@ -50,6 +51,16 @@ button {
   height: 100vh;
   padding-top: 33.3%;
 }
+/*REGISTER*/
+#registerPage{
+  background-color: #3e3f41;
+  width: 100%;
+}
+#register{
+  width: 90%;
+  margin: 5%;
+  padding:5%;
+}
 
 /*PERFIL*/
 #porfilePage{
@@ -73,4 +84,8 @@ button {
   height: auto;
 }
 
-/*MENU*/
+/*SALDO TARJETA*/
+#soldPage{
+  background-color: #dddee0;
+  height: 100vh;
+}

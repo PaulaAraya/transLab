@@ -26,14 +26,17 @@ window.validateEmail = function(email){
   return true;
 };
 
-window.validatePassword = function (password) {
-  //validar numero
-  if (password.length > 8){
-    return false;
-  }
-  if (password.length === /[a-z]/g) {
-    return false;
-  }
-  return true;
+const createUser = function(event){
+    event.preventDefault();
+    const email = document.getElementById('emailNewUser').value;
+    const password = document.getElementById('passwordNewUser').value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then(function(data){
+        console.log(data) //cada vez que se genere un nuevo usuario me envíe información
+    }).catch(function(error){
+        console.log(error)// cada vez que exista un error 
+    });
+    return false; // false para que la pagina no se vuelva a recargar
 };
 
