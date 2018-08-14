@@ -1,4 +1,4 @@
-//Se crea ruta
+//Se crea referencia
 const cardRef = firebase.database().ref('card/');
 
 //Agregar tarjetas
@@ -10,7 +10,7 @@ const addCard = function () {
   }
   cardRef.push().set(saveCard)
 };
-//Ver saldo de tarjeta seleccionada
+//Guardar Tarjetas en el select e input
 const selectCard = ()=>{
   
 };
