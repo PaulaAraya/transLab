@@ -80,3 +80,67 @@
 [info] i  hosting: Serving hosting files from:  
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2018-08-14T01:41:05.279Z] ----------------------------------------------------------------------
+[debug] [2018-08-14T01:41:05.297Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-14T01:41:05.298Z] CLI Version:   4.0.3
+[debug] [2018-08-14T01:41:05.298Z] Platform:      darwin
+[debug] [2018-08-14T01:41:05.298Z] Node Version:  v8.11.1
+[debug] [2018-08-14T01:41:05.307Z] Time:          Mon Aug 13 2018 22:41:05 GMT-0300 (CLT)
+[debug] [2018-08-14T01:41:05.307Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-14T01:41:05.437Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-14T01:41:05.437Z] > authorizing via signed-in user
+[debug] [2018-08-14T01:41:05.440Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
+  
+ Mon Aug 13 2018 22:41:05 GMT-0300 (CLT)
+[debug] [2018-08-14T01:41:07.716Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:41:07.717Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
+  
+ Mon Aug 13 2018 22:41:07 GMT-0300 (CLT)
+[debug] [2018-08-14T01:41:09.769Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:41:09.771Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
+  
+ Mon Aug 13 2018 22:41:09 GMT-0300 (CLT)
+[debug] [2018-08-14T01:41:10.968Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
+[info] 
+[debug] [2018-08-14T01:41:10.971Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
+  
+ Mon Aug 13 2018 22:41:10 GMT-0300 (CLT)
+[debug] [2018-08-14T01:41:11.589Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from:  
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-08-14T01:47:16.677Z] ----------------------------------------------------------------------
+[debug] [2018-08-14T01:47:16.695Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-14T01:47:16.696Z] CLI Version:   4.0.3
+[debug] [2018-08-14T01:47:16.696Z] Platform:      darwin
+[debug] [2018-08-14T01:47:16.696Z] Node Version:  v8.11.1
+[debug] [2018-08-14T01:47:16.705Z] Time:          Mon Aug 13 2018 22:47:16 GMT-0300 (CLT)
+[debug] [2018-08-14T01:47:16.706Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-14T01:47:16.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-14T01:47:16.836Z] > authorizing via signed-in user
+[debug] [2018-08-14T01:47:16.839Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
+  
+ Mon Aug 13 2018 22:47:16 GMT-0300 (CLT)
+[debug] [2018-08-14T01:47:18.429Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:47:18.430Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
+  
+ Mon Aug 13 2018 22:47:18 GMT-0300 (CLT)
+[debug] [2018-08-14T01:47:19.344Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:47:19.345Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
+  
+ Mon Aug 13 2018 22:47:19 GMT-0300 (CLT)
+[debug] [2018-08-14T01:47:20.573Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
+[info] 
+[debug] [2018-08-14T01:47:20.577Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
+  
+ Mon Aug 13 2018 22:47:20 GMT-0300 (CLT)
+[debug] [2018-08-14T01:47:21.187Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from:  
+[info] ✔  hosting: Local server: http://localhost:5000
+

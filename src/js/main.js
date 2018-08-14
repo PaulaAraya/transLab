@@ -3,9 +3,13 @@ const btnAddCard = document.getElementById('addCard');
 const btnCalculate = document.getElementById('btnCalculate');
 const btnRegister = document.getElementById('btnRegister');
 const btnLogIn = document.getElementById('btnLogIn');
+const btnLogOut = document.getElementById('btnLogOut');
 
 //Iniciar Sesión
 btnLogIn.addEventListener('click', logIn);
+
+//Salir Sesión
+btnLogOut.addEventListener('click', logOut);
 
 //Registro de Usuario
 btnRegister.addEventListener('click', createUser);
@@ -37,7 +41,7 @@ const viewHome = function(){
       homePage.style.display = 'block';
     }else{
       hideAll();
-      registerPage.style.display = 'block';
+      logInPage.style.display = 'block';
     }
   })
 };
