@@ -26,6 +26,7 @@ window.validateEmail = function(email){
   return true;
 };
 
+// Crear Usuario
 const createUser = function(event){
     event.preventDefault();
     const email = document.getElementById('emailNewUser').value;
@@ -33,7 +34,8 @@ const createUser = function(event){
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(function(data){
-        console.log(data) //cada vez que se genere un nuevo usuario me envíe información
+        console.log(data) 
+        viewHome(); //Iniciada la sesión cambia a la pagina principal 
     }).catch(function(error){
         console.log(error)// cada vez que exista un error 
     });

@@ -39,3 +39,44 @@
 [info] i  hosting: Serving hosting files from:  
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2018-08-14T01:02:33.748Z] ----------------------------------------------------------------------
+[debug] [2018-08-14T01:02:33.767Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-14T01:02:33.767Z] CLI Version:   4.0.3
+[debug] [2018-08-14T01:02:33.767Z] Platform:      darwin
+[debug] [2018-08-14T01:02:33.767Z] Node Version:  v8.11.1
+[debug] [2018-08-14T01:02:33.819Z] Time:          Mon Aug 13 2018 22:02:33 GMT-0300 (CLT)
+[debug] [2018-08-14T01:02:33.819Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-14T01:02:33.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-14T01:02:33.895Z] > authorizing via signed-in user
+[debug] [2018-08-14T01:02:33.898Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-14T01:02:33.898Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/v4VhScxqFpsn878vw6_2NrrD7BdF-hgflFrZlMb0zhAVSASgUd3QQsYmBXHRo3on',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Aug 13 2018 22:02:33 GMT-0300 (CLT)
+[debug] [2018-08-14T01:02:34.989Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:02:35.184Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
+  
+ Mon Aug 13 2018 22:02:35 GMT-0300 (CLT)
+[debug] [2018-08-14T01:02:37.088Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:02:37.089Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
+  
+ Mon Aug 13 2018 22:02:37 GMT-0300 (CLT)
+[debug] [2018-08-14T01:02:37.819Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T01:02:37.820Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
+  
+ Mon Aug 13 2018 22:02:37 GMT-0300 (CLT)
+[debug] [2018-08-14T01:02:39.037Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
+[info] 
+[debug] [2018-08-14T01:02:39.040Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
+  
+ Mon Aug 13 2018 22:02:39 GMT-0300 (CLT)
+[debug] [2018-08-14T01:02:39.660Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from:  
+[info] ✔  hosting: Local server: http://localhost:5000
+
