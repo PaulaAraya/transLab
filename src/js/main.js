@@ -15,7 +15,7 @@ btnLogOut.addEventListener('click', logOut);
 btnRegister.addEventListener('click', createUser);
 
 //Agregar Numero de tarjeta
-btnAddCard.addEventListener('click', addCardInput);
+btnAddCard.addEventListener('click', addCard);
 
 //Seleccionar tarjeta guardada
 btnCalculate.addEventListener('click', selectCard);
