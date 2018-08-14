@@ -1,7 +1,11 @@
 const inputCard = document.getElementById('cardNumber');
 const btnAddCard = document.getElementById('addCard');
 const btnCalculate = document.getElementById('btnCalculate');
-const btnRegister = document.getElementById('btnRegister')
+const btnRegister = document.getElementById('btnRegister');
+const btnLogIn = document.getElementById('btnLogIn');
+
+//Iniciar Sesión
+btnLogIn.addEventListener('click', logIn);
 
 //Registro de Usuario
 btnRegister.addEventListener('click', createUser);

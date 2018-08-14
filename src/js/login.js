@@ -42,3 +42,8 @@ const createUser = function(event){
     return false; // false para que la pagina no se vuelva a recargar
 };
 
+// Inicia Sesión
+const logIn = function(event){
+    event.preventDefault();
+    
+}
