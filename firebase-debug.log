@@ -1,146 +1,28 @@
-[debug] [2018-08-13T21:44:02.446Z] ----------------------------------------------------------------------
-[debug] [2018-08-13T21:44:02.449Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-08-13T21:44:02.449Z] CLI Version:   4.0.3
-[debug] [2018-08-13T21:44:02.449Z] Platform:      darwin
-[debug] [2018-08-13T21:44:02.450Z] Node Version:  v8.11.1
-[debug] [2018-08-13T21:44:02.450Z] Time:          Mon Aug 13 2018 18:44:02 GMT-0300 (CLT)
-[debug] [2018-08-13T21:44:02.451Z] ----------------------------------------------------------------------
+[debug] [2018-08-15T02:57:12.380Z] ----------------------------------------------------------------------
+[debug] [2018-08-15T02:57:12.383Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-15T02:57:12.383Z] CLI Version:   4.1.0
+[debug] [2018-08-15T02:57:12.383Z] Platform:      darwin
+[debug] [2018-08-15T02:57:12.383Z] Node Version:  v8.11.1
+[debug] [2018-08-15T02:57:12.427Z] Time:          Tue Aug 14 2018 23:57:12 GMT-0300 (CLT)
+[debug] [2018-08-15T02:57:12.428Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-08-13T21:44:02.748Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-08-13T21:44:02.749Z] > authorizing via signed-in user
-[debug] [2018-08-13T21:44:02.752Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-08-13T21:44:02.752Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/v4VhScxqFpsn878vw6_2NrrD7BdF-hgflFrZlMb0zhAVSASgUd3QQsYmBXHRo3on',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Aug 13 2018 18:44:02 GMT-0300 (CLT)
-[debug] [2018-08-13T21:44:03.138Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-13T21:44:03.334Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 18:44:03 GMT-0300 (CLT)
-[debug] [2018-08-13T21:44:05.004Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-13T21:44:05.005Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
-  
- Mon Aug 13 2018 18:44:05 GMT-0300 (CLT)
-[debug] [2018-08-13T21:44:05.811Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-13T21:44:05.812Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 18:44:05 GMT-0300 (CLT)
-[debug] [2018-08-13T21:44:07.192Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-15T02:57:12.512Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-15T02:57:12.512Z] > authorizing via signed-in user
+[debug] [2018-08-15T02:57:12.515Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
+ 
+[debug] [2018-08-15T02:57:14.373Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-15T02:57:14.374Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
+ 
+[debug] [2018-08-15T02:57:15.257Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-15T02:57:15.258Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
+ 
+[debug] [2018-08-15T02:57:17.103Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
 [info] 
-[debug] [2018-08-13T21:44:07.195Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
-  
- Mon Aug 13 2018 18:44:07 GMT-0300 (CLT)
-[debug] [2018-08-13T21:44:07.657Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from:  
-[info] ✔  hosting: Local server: http://localhost:5000
-
-[debug] [2018-08-14T01:02:33.748Z] ----------------------------------------------------------------------
-[debug] [2018-08-14T01:02:33.767Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-08-14T01:02:33.767Z] CLI Version:   4.0.3
-[debug] [2018-08-14T01:02:33.767Z] Platform:      darwin
-[debug] [2018-08-14T01:02:33.767Z] Node Version:  v8.11.1
-[debug] [2018-08-14T01:02:33.819Z] Time:          Mon Aug 13 2018 22:02:33 GMT-0300 (CLT)
-[debug] [2018-08-14T01:02:33.819Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-08-14T01:02:33.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-08-14T01:02:33.895Z] > authorizing via signed-in user
-[debug] [2018-08-14T01:02:33.898Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-08-14T01:02:33.898Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/v4VhScxqFpsn878vw6_2NrrD7BdF-hgflFrZlMb0zhAVSASgUd3QQsYmBXHRo3on',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Aug 13 2018 22:02:33 GMT-0300 (CLT)
-[debug] [2018-08-14T01:02:34.989Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:02:35.184Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 22:02:35 GMT-0300 (CLT)
-[debug] [2018-08-14T01:02:37.088Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:02:37.089Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
-  
- Mon Aug 13 2018 22:02:37 GMT-0300 (CLT)
-[debug] [2018-08-14T01:02:37.819Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:02:37.820Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 22:02:37 GMT-0300 (CLT)
-[debug] [2018-08-14T01:02:39.037Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
-[info] 
-[debug] [2018-08-14T01:02:39.040Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
-  
- Mon Aug 13 2018 22:02:39 GMT-0300 (CLT)
-[debug] [2018-08-14T01:02:39.660Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from:  
-[info] ✔  hosting: Local server: http://localhost:5000
-
-[debug] [2018-08-14T01:41:05.279Z] ----------------------------------------------------------------------
-[debug] [2018-08-14T01:41:05.297Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-08-14T01:41:05.298Z] CLI Version:   4.0.3
-[debug] [2018-08-14T01:41:05.298Z] Platform:      darwin
-[debug] [2018-08-14T01:41:05.298Z] Node Version:  v8.11.1
-[debug] [2018-08-14T01:41:05.307Z] Time:          Mon Aug 13 2018 22:41:05 GMT-0300 (CLT)
-[debug] [2018-08-14T01:41:05.307Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-08-14T01:41:05.437Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-08-14T01:41:05.437Z] > authorizing via signed-in user
-[debug] [2018-08-14T01:41:05.440Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 22:41:05 GMT-0300 (CLT)
-[debug] [2018-08-14T01:41:07.716Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:41:07.717Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
-  
- Mon Aug 13 2018 22:41:07 GMT-0300 (CLT)
-[debug] [2018-08-14T01:41:09.769Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:41:09.771Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 22:41:09 GMT-0300 (CLT)
-[debug] [2018-08-14T01:41:10.968Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
-[info] 
-[debug] [2018-08-14T01:41:10.971Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
-  
- Mon Aug 13 2018 22:41:10 GMT-0300 (CLT)
-[debug] [2018-08-14T01:41:11.589Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from:  
-[info] ✔  hosting: Local server: http://localhost:5000
-
-[debug] [2018-08-14T01:47:16.677Z] ----------------------------------------------------------------------
-[debug] [2018-08-14T01:47:16.695Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-08-14T01:47:16.696Z] CLI Version:   4.0.3
-[debug] [2018-08-14T01:47:16.696Z] Platform:      darwin
-[debug] [2018-08-14T01:47:16.696Z] Node Version:  v8.11.1
-[debug] [2018-08-14T01:47:16.705Z] Time:          Mon Aug 13 2018 22:47:16 GMT-0300 (CLT)
-[debug] [2018-08-14T01:47:16.706Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-08-14T01:47:16.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-08-14T01:47:16.836Z] > authorizing via signed-in user
-[debug] [2018-08-14T01:47:16.839Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 22:47:16 GMT-0300 (CLT)
-[debug] [2018-08-14T01:47:18.429Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:47:18.430Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/translab-paw/tokens  
-  
- Mon Aug 13 2018 22:47:18 GMT-0300 (CLT)
-[debug] [2018-08-14T01:47:19.344Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-14T01:47:19.345Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/translab-paw  
-  
- Mon Aug 13 2018 22:47:19 GMT-0300 (CLT)
-[debug] [2018-08-14T01:47:20.573Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/margotwilliamstorrico/Documents/LABORATORIA/Translab'...
-[info] 
-[debug] [2018-08-14T01:47:20.577Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
-  
- Mon Aug 13 2018 22:47:20 GMT-0300 (CLT)
-[debug] [2018-08-14T01:47:21.187Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from:  
+[debug] [2018-08-15T02:57:17.106Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/394164749681/clients/_:getWebAppConfig  
+ 
+[debug] [2018-08-15T02:57:17.730Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 

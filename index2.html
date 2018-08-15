@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="../Translab/src/css/style.css">
+  <title>Trans Lab</title>
+</head>
+<body>
+  
+  <div class="container-fluid">
+    <!-- login -->
+    <section class="page" id="logInPage">
+      <div class="row">
+        <div class="col-sm-4 offset-sm-4">
+          <img src="src/assets/img/imagen.png" id="logo" alt="logo">
+          <form>
+            <div class="form-group" id="login">
+              <input type="email" id="emailUser" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
+              <input type="password"  id="passwordUser" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Contraseña">
+              <button id="btnLogIn" type="submit" class="btn rounded-0" style="width: 100%;">INICIAR SESION</button>
+              <div>
+                <label class="font-weight-normal text-light font-weight-normal ">¿Olvidaste tu contraseña?</label>
+              </div>
+              <div>
+                <p class="text-light font-weight-normal text-center">¿NO TIENES CUENTA?
+                  <span class="color font-weight-bold">REGISTRATE</span>
+                </p>
+              </div>
+          </form>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+    </section>
+    <!-- Register -->
+    <section class="page" id="registerPage">
+        <div class="row">
+          <div class="col-sm-4 offset-sm-4">
+            <form>
+              <div class="form-group" id="Register">
+                <input type="email" id="emailNewUser" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
+                <input type="password"  id="passwordNewUser" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Contraseña">
+                <button id="btnRegister" type="submit" class="btn rounded-0" style="width: 100%;">REGISTRAR</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+      </section>
+    <!-- Home -->
+    <section class="page" id="homePage">
+      <div class="row align-items-center">
+        <div class="col-sm-4 offset-sm-4">
+          <div>
+            <button type="submit" class="btn rounded-0 btnHome">VER SALDO</button>
+          </div>
+          <div>
+            <button type="submit" class="btn rounded-0 btnHome">CALCULAR TARIFA</button>
+          </div>
+          <div>
+            <button type="submit" class="btn rounded-0 btnHome">PERFIL</button>
+          </div>
+          <div>
+            <button type="submit" class="btn rounded-0 btnHome">PREGUNTA FRECUENTES</button>
+          </div>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+
+    </section>
+    <!-- Perfil Agregar tarjeta -->
+    <section class="page" id="porfilePage">
+      <div id="porfilePhoto">
+      </div>
+      <div id="porfileEmail">
+        <!-- Aqui se imprime mail -->
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-4 offset-sm-4">
+          <form>
+            <div class="form-group" id="card">
+              <input type="text" class="form-control rounded-0" id="cardNumberInput" aria-describedby="emailHelp" placeholder="Numero de tarjeta">
+              <button type="submit" id="addCard" class="btn rounded-0" style="width: 100%;">AGREGAR TARJETA</button>
+              <div class="form-group" id="cardPrint">
+                <input class="form-control-sm rounded-0 cardSave" type="text" readonly>
+                <input class="form-control-sm rounded-0 cardSave" type="text" readonly>
+                <input class="form-control-sm rounded-0 cardSave" type="text" readonly>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </section>
+
+    <!-- Calculadora de Saldo -->
+    <section class="page" id="calculatorPage">
+      <div class="row align-items-center">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-auto mr-auto">
+              <form>
+                <label class="my-1 mr-2">Tarifa</label>
+                <select class="custom-select my-1 mr-sm-2" id="fareCard">
+                  <option selected>Tarifa</option>
+                  <option value="alto">Horario Alto: $760</option>
+                  <option value="medio">Horario Medio: $680</option>
+                  <option value="3">Horario Bajo: $630</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-auto">
+              <form>
+                <label class="my-1 mr-2">Tarjeta</label>
+                <select class="custom-select my-1 mr-sm-2" id="cardSelect">
+                  <option selected>Nº tarjeta</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-4 offset-sm-4">
+          <button type="submit" id="btnCalculate" class="btn rounded-0 btnHome">CALCULAR</button>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </section>
+    <!-- Preguntas Frecuentes -->
+    <section class="page" id="FaqPage">
+
+    </section>
+    <!-- Saldo Tarjeta -->
+    <section class="page" id="saldoPage">
+      <div class="row align-items-center">
+        <div class="col-sm-4 offset-sm-4">
+          <form>
+            <label class="my-1 mr-2">Numero tarjeta
+              <hr>
+            </label>
+            <select class="custom-select my-1 mr-sm-2" id="cardSelect">
+              <option selected>Nº tarjeta</option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+            </select>
+            <button type="submit" id="btnView" class="btn rounded-0 btnHome">VER SALDO</button>
+          </form>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="col-sm-4"></div>
+  </div>
+  </section>
+  </div>
+  <!-- fin container -->
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+crossorigin="anonymous"></script>
+
+<!-- JS 
+<script src="src/js/card.js"></script>
+<script src="src/js/menu.js"></script>
+<script src="src/js/controller.js"></script>
+<script src="src/js/data.js"></script>
+<script src="src/js/user.js"></script>
+<script src="src/js/firebase.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+
+</html>  -->

@@ -9,7 +9,7 @@ const btnLogOut = document.getElementById('btnLogOut');
 btnLogIn.addEventListener('click', logIn);
 
 //Salir Sesión
-btnLogOut.addEventListener('click', logOut);
+//btnLogOut.addEventListener('click', logOut);
 
 //Registro de Usuario
 btnRegister.addEventListener('click', createUser);
