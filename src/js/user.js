@@ -14,9 +14,9 @@ const createUser = function (event) {
 	return false; // false para que la pagina no se vuelva a recargar
 };
 
+/*
 // Iniciar Sesión
-const logIn = function (event) {
-	event.preventDefault();
+const logIn = function () {
 	const emailUser = document.getElementById('emailUser').value;
 	const passwordUser = document.getElementById('passwordUser').value;
 
@@ -25,6 +25,7 @@ const logIn = function (event) {
 			console.log(error)
 		})
 };
+*/
 
 // Salir Sesión
 const logOut = function () {

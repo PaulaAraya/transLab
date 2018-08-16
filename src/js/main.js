@@ -1,10 +1,17 @@
-const inputCard = document.getElementById('cardNumber');
-const btnAddCard = document.getElementById('addCard');
+// Botones
+const btnAddCard = document.getElementById('btnAddCard');
 const btnCalculate = document.getElementById('btnCalculate');
+const btnSaldo = document.getElementById('btnSaldo');
 const btnRegister = document.getElementById('btnRegister');
 const btnLogIn = document.getElementById('btnLogIn');
 const btnLogOut = document.getElementById('btnLogOut');
 
+// Agregar Tarjeta
+btnAddCard.addEventListener('click', PrintNumberCard);
+
+//Ver Saldo Tarjeta
+btnSaldo.addEventListener('click', renderInfoCard);
+/*
 //Iniciar Sesión
 btnLogIn.addEventListener('click', logIn);
 
@@ -45,3 +52,4 @@ const viewHome = function(){
     }
   })
 };
+*/
