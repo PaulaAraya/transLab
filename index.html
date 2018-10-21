@@ -105,22 +105,18 @@
     <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div id="porfileEmail" class="card">
-              <div class="card-body" id="mailUser">
+              <div class="card-body" id="mailUser" style="padding-top: 10px; padding-bottom: 0px; height: 40px;">
                 <!-- Email usuario -->
               </div>
             </div>
 
-            <input type="text" class="form-control-sm rounded-0" id="cardNumberInput" placeholder="Numero de tarjeta">
+            <input type="text" class="form-control-sm rounded-0" id="addCardInput" placeholder="Numero de tarjeta" style="width: 100%; margin-bottom: 10px;">
 
             <button type="submit" id="btnAddCard"  class="btn rounded-0" style="width: 100%;">AGREGAR TARJETA</button>
+
+            <div class="card" id="cardAddPrint" style="margin-top: 1em"> <!-- tarjetas guardadas --> </div>
           </div>
       </div>
-      <div id="cardSave" style="width: 289px; height: 30px;">
-          sfdfdgdgfgdgddgs
-                <!-- tarjeta gurdada -->
-             
-      </div>
-    </div>
   </section>
   <!-- Calcular Tarifa -->
   <section class="page" id="calculatorPage">
@@ -242,6 +238,7 @@
   <script src="src/js/main.js"></script>
   <script src="src/js/user.js"></script>
   <script src="src/js/view.js"></script>
+  <script src="src/js/model.js"></script>
 </body>
 
 </html>

@@ -238,6 +238,7 @@ background-color: white;
   text-align: center;
   color: white;
   padding: 10%;
+ 
 }
 
 .faq{
@@ -263,4 +264,8 @@ a:active
 a:hover
 {
   color: #f6a800;
+}
+
+.card-text {
+  margin:2%;
 }

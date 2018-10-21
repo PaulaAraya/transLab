@@ -2,11 +2,7 @@
 //let arrayCard = [];
 
 const addCard = () => {
-  
-}
 
-const saveCard = () => {
-  
 }
 
 const PrintSaldo = (saldo) => {

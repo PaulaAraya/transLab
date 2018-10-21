@@ -13,7 +13,7 @@ const btnSaldo = document.getElementById('btnSaldo');
 
 // Agregar Tarjeta
 btnAddCard.addEventListener('click', () => {
-  addCard();
+  saveCard();
 });
 
 //Ver Saldo Tarjeta

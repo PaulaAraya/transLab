@@ -1,11 +1,10 @@
 // Crear Usuario
-const createUser = function () {
+const createUser = function() {
 	const email = document.getElementById('emailNewUser').value;
 	const password = document.getElementById('passwordNewUser').value;
 
 	firebase.auth().createUserWithEmailAndPassword(email, password)
 		.then(function (data) {
-			console.log(data)
 			sendEmail();
 			getUser();
 			alert('recibiras un correo electrónico de verificación de cuenta ')
@@ -17,11 +16,11 @@ const createUser = function () {
 };
 
 // Enviar Mail Verficación
-const sendEmail = function(){
+const sendEmail = function() {
 	const user = firebase.auth().currentUser;
 	user.sendEmailVerification()
 	.then(function(){
-		console.log('mail enviado');
+		alert('Email de verificación enviado. Por favor verifique su cuenta');
 	}, function(error) {
 		console.log('error');
 	})
@@ -34,9 +33,8 @@ let user = firebase.auth().currentUser;
 const getUser = function() {
 	firebase.auth().onAuthStateChanged(function(user){
 		if(user){
-			console.log(user);
 			showHomePage();
-			mailUser.innerHTML += ` <p>${user.email}</p>`;
+			mailUser.innerHTML = `<p class="text-center">${user.email}</p>`;
 		}else{
 			showlogInPage();
 		}
@@ -46,7 +44,7 @@ const getUser = function() {
 getUser();
 
 // Iniciar Sesión
-const logIn = function () {
+const logIn = function() {
 	const emailUser = document.getElementById('emailUser').value;
 	const passwordUser = document.getElementById('passwordUser').value;
 	firebase.auth().signInWithEmailAndPassword(emailUser, passwordUser)
@@ -59,24 +57,9 @@ const logIn = function () {
 
 
 // Salir Sesión
-const logOut = function () {
+const logOut = function() {
 	firebase.auth().signOut().then(function() {
-		console.log('sesión cerrada')
 	}).catch(function(error) {
 		console.log(error)
 	});
 }
-
-/*
-//Perfil de usuario
-firebase.auth().currentUser;
-
-//Actualizar perfil
-firebase.auth().currentUser.updateProfile({
-	displayName: ,
-	photoURL: 
-}).then(function () {
-	// Ok.
-}, function (error) {
-	// Error.
-}); */
