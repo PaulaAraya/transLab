@@ -1,8 +1,19 @@
-//const cardSave = document.getElementById('cardSave');
-//let arrayCard = [];
+const printAddCard = (numbers) => {
+  const cardAddPrint = document.getElementById('cardAddPrint');
+  const calculatorSelect = document.getElementById('calculatorSelect');
+  const saldoSelect = document.getElementById('saldoSelect');
 
-const addCard = () => {
-
+  Object.keys(numbers).forEach(key => {
+    cardAddPrint.innerHTML += '';
+    cardAddPrint.innerHTML += `
+    <ul class="list-group list-group-flush" style="margin: 0; padding-top: 0px;">
+    <li class="list-group-item" style="padding-top: 0px; padding-bottom: 0px;">
+    <p class="text-center card-text">${numbers[key].numberCard}</p>
+    </li>
+    </ul>`;
+    calculatorSelect.innerHTML += ` <option value="${numbers[key].numberCard}">${numbers[key].numberCard}</option>`;
+    saldoSelect.innerHTML += ` <option value="${numbers[key].numberCard}">${numbers[key].numberCard}</option>`;
+  });
 }
 
 const PrintSaldo = (saldo) => {
@@ -49,22 +60,3 @@ const clearInput = () => {
   document.getElementById('calculatorInput').value = '';
 }
 
-
-/*
-//Se crea referencia
-const cardRef = firebase.database().ref('card/');
-
-//Agregar tarjetas
-const addCard = function () {
-  const cardNumber = document.getElementById('cardNumberInput').value;
-  let saveCard = {
-    email: currentUser.email,
-    number: cardNumber
-  }
-  cardRef.push().set(saveCard)
-};
-//Guardar Tarjetas en el select e input
-const selectCard = ()=>{
-  
-};
-*/

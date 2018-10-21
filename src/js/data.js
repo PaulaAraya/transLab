@@ -12,7 +12,6 @@ const cardNumber = function () {
     .catch(error => {
       console.error('error procesando tu información');
       console.error('ERROR' + error.stack);
-      alert('Ingrese nuevamente el número de su tarjeta');
     });
 }
 
@@ -36,6 +35,5 @@ const cardFare = function () {
     .catch(error => {
       console.error('error procesando tu información');
       console.error('ERROR' + error.stack);
-      alert('Ingrese nuevamente el número de su tarjerta');
     });
 }
