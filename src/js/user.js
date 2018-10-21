@@ -12,6 +12,7 @@ const createUser = function () {
 		}).catch(function (error) {
 			console.log(error)// cada vez que exista un error 
 		});
+		getUser();
 	return false; // false para que la pagina no se vuelva a recargar
 };
 
@@ -28,6 +29,7 @@ const sendEmail = function(){
 
 // Get User
 const mailUser = document.getElementById('mailUser');
+let user = firebase.auth().currentUser;
 
 const getUser = function() {
 	firebase.auth().onAuthStateChanged(function(user){
@@ -39,7 +41,9 @@ const getUser = function() {
 			showlogInPage();
 		}
 	})
-}
+};
+
+getUser();
 
 // Iniciar Sesión
 const logIn = function () {
@@ -47,7 +51,7 @@ const logIn = function () {
 	const passwordUser = document.getElementById('passwordUser').value;
 	firebase.auth().signInWithEmailAndPassword(emailUser, passwordUser)
 		.then( function(){
-			getUser();
+		
 		}).catch(function (error) {
 			console.log(error)
 		})
@@ -56,8 +60,7 @@ const logIn = function () {
 
 // Salir Sesión
 const logOut = function () {
-	firebase.auth().signOut()
-	.then(function() {
+	firebase.auth().signOut().then(function() {
 		console.log('sesión cerrada')
 	}).catch(function(error) {
 		console.log(error)
