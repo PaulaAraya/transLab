@@ -8,7 +8,6 @@ button {
 
 /* NAVBAR */
 
-
 input[type=checkbox]{
   display: none;
 }
@@ -22,7 +21,6 @@ input[type=checkbox]:checked ~ #fullscreen_toogle{
   display: block;
 }
 
-/* You can click any place of the screen to close the menu but in the menu itself */
 #fullscreen_toogle{
   width: 100vw;
   height: 100vh;
@@ -72,6 +70,10 @@ font-size: 35px;
   background-color: white;
   width: 300px;
   color: white;
+}
+
+i a {
+  color: #3e3f41;
 }
 
 li{
@@ -241,4 +243,24 @@ background-color: white;
 .faq{
   width: 100%;
   background-color: white;
+}
+
+.page{
+  height: 100vh;
+  width: 100%;
+}
+
+a
+a:link, 
+a:visited, 
+a:hover,
+a:active
+{
+  text-decoration:none;
+}
+
+.color,
+a:hover
+{
+  color: #f6a800;
 }

@@ -6,45 +6,53 @@ const createUser = function () {
 	firebase.auth().createUserWithEmailAndPassword(email, password)
 		.then(function (data) {
 			console.log(data)
+			sendEmail();
 			getUser();
-			// viewHome(); Iniciada la sesión cambia a la pagina principal 
+			alert('recibiras un correo electrónico de verificación de cuenta ')
 		}).catch(function (error) {
 			console.log(error)// cada vez que exista un error 
 		});
 	return false; // false para que la pagina no se vuelva a recargar
 };
 
+// Enviar Mail Verficación
+const sendEmail = function(){
+	const user = firebase.auth().currentUser;
+	user.sendEmailVerification()
+	.then(function(){
+		console.log('mail enviado');
+	}, function(error) {
+		console.log('error');
+	})
+}
+
 // Get User
+const mailUser = document.getElementById('mailUser');
 
 const getUser = function() {
 	firebase.auth().onAuthStateChanged(function(user){
 		if(user){
-			logInPage.style.display = 'none';
-  		registerPage.style.display = 'none';
-  		porfilePage.style.display = 'none';
-  		calculatorPage.style.display = 'none';
-  		saldoPage.style.display = 'none';
-			faqPage.style.display = 'none';
-			homePage.style.display = 'block';
-  		menu.style.display = 'block';
-  		nav.style.display = 'block';
+			console.log(user);
+			showHomePage();
+			mailUser.innerHTML += ` <p>${user.email}</p>`;
 		}else{
 			showlogInPage();
 		}
 	})
 }
-/*
+
 // Iniciar Sesión
 const logIn = function () {
 	const emailUser = document.getElementById('emailUser').value;
 	const passwordUser = document.getElementById('passwordUser').value;
-
 	firebase.auth().signInWithEmailAndPassword(emailUser, passwordUser)
-		.catch(function (error) {
+		.then( function(){
+			getUser();
+		}).catch(function (error) {
 			console.log(error)
 		})
 };
-*/
+
 
 // Salir Sesión
 const logOut = function () {

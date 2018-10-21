@@ -14,12 +14,11 @@ const hidePages = () => {
   homePage.style.display = 'none';
   porfilePage.style.display = 'none';
   calculatorPage.style.display = 'none';
-  saldoPage.style.display = 'none';
   faqPage.style.display = 'none';
+  saldoPage.style.display = 'none';
   menu.style.display = 'none';
   nav.style.display = 'none';
 }
-
 
 const showlogInPage = () => {
   hidePages();
@@ -42,19 +41,19 @@ const showPorfilePage = () => {
   nav.style.display = 'block';
   porfilePage.style.display = 'block';
 }
-const calculatorPage = () => {
+const showCalculatorPage = () => {
   hidePages();
   menu.style.display = 'block';
   nav.style.display = 'block';
   calculatorPage.style.display = 'block';
 }
-const saldoPage = () => {
+const showSaldoPage = () => {
   hidePages();
   menu.style.display = 'block';
   nav.style.display = 'block';
   saldoPage.style.display = 'block';
 }
-const faqPage = () => {
+const showFaqPage = () => {
   hidePages();
   menu.style.display = 'block';
   nav.style.display = 'block';

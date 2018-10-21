@@ -1,17 +1,36 @@
-/*const idtarjeta = function () {
-  if (cardNumberSelect1 || cardNumberSelect2) {
-    fetch('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={idtarjeta}')
-      .then(data => data.json())
-      .then(data => {
-        console.log(data)
-        renderInfoCard(data);
-      }).catch(error => {
-        console.error("tarjeta no existe");
-        console.error("ERROR > " + error.stack);
-      });
-  }
+const cardNumber = function () {
+  const saldoInput = document.getElementById('saldoInput').value;
+  const saldoSelect = document.getElementById('saldoSelect').value;
+      fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${saldoInput || saldoSelect}`)
+    .then(response => response.json())
+    .then(bipData => {
+      dataBipCard = bipData;
+      //Imprimir saldo 
+      PrintSaldo(dataBipCard.saldoTarjeta);
+    })
+    .catch(error => {
+      console.error('error procesando tu información');
+      console.error('ERROR' + error.stack);
+    });
 }
 
+const cardFare = function () {
+  const calculatorInput = document.getElementById('calculatorInput').value;
+  const calculatorSelect = document.getElementById('calculatorSelect').value;
+  const fare = document.getElementById('fareCard').value;
+      fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${calculatorInput || calculatorSelect}`)
+    .then(response => response.json())
+    .then(bipData => {
+      dataBipCard = bipData;
+      //Calcular saldo 
+      calculateCard(dataBipCard.saldoTarjeta, fare);
+    })
+    .catch(error => {
+      console.error('error procesando tu información');
+      console.error('ERROR' + error.stack);
+    });
+}
+/*
 const renderInfoCard = function (data) {
   data.preventDefault();
   cardPorfileSave.innerHTML = '';
@@ -28,14 +47,8 @@ const PrintNumberCard1 = (event) => {
   event.preventDefault();
   const cardNumberInput = document.getElementById('cardNumberInput').value;
   cardPorfileSave.innerHTML = '';
-  cardPorfileSave.innerHTML += `
-  <ul class="list-group list-group-flush" style="width: 100%;">
-             <li class="list-group-item">
-             <p class="card-text text-justify">${cardNumberInput}</p>
-             </li>
-           </ul>
-      <ul class="list-group list-group-flush" style="width: 100%;">
-  ` ;
+  
+  
 };
 
 */

@@ -16,7 +16,7 @@
 <body>
     <input type="checkbox" id="menu_toogle">
     <header style="
-    margin-bottom: 0px;">
+    margin-bottom: 0px;" id="nav">
        
         <label for="menu_toogle" class="pointer open" style="
         margin-left: 10px;
@@ -28,15 +28,15 @@
     <label for="menu_toogle" id="fullscreen_toogle">
     </label>
     
-    <div class="menu" style="z-index: 100;"> 
+    <div id="menu" class="menu" style="z-index: 100;"> 
         <label class="close pointer" for="menu_toogle"><i class="fas fa-times"></i></label>
         <ul>
-            <li><i class="fas fa-dollar-sign"></i> Ver Saldo</li>
-            <li><i class="fas fa-th"></i> Calcular Tarifa</li>
-            <li> <i class="fas fa-user"></i> Perfil</li>
-            <li> <i class="fas fa-poll-h"></i> Preguntas Frecuentes</li>
-            <li><i class="fas fa-arrow-right"></i> Home</li>
-            <li><i class="fas fa-sign-out-alt"></i> LogOut</li> 
+            <li><i class="fas fa-dollar-sign"></i><a href="" onclick="showSaldoPage()"> Ver Saldo</a></li>
+            <li><i class="fas fa-th"></i><a href="" onclick="showCalculatorPage()"> Calcular Tarifa</a></li>
+            <li> <i class="fas fa-user"></i> <a href="" onclick="showPorfilePage()"> Perfil</a></li>
+            <li> <i class="fas fa-poll-h"></i><a href="" onclick="showFaqPage()"> Preguntas Frecuentes</a></li>
+            <li><i class="fas fa-arrow-right"></i> <a href="" onclick="showHomePage()">Home</a></li>
+            <li><i class="fas fa-sign-out-alt"><a href="" onclick="logIn()"></i> LogOut</a></li> 
         </ul>
     </div>
     
@@ -55,7 +55,7 @@
             </div>
             <div>
               <p class="text-light font-weight-normal text-center">¿NO TIENES CUENTA?
-                <span class="color font-weight-bold registerlabel">REGISTRATE</span>
+                <span class="color font-weight-bold registerlabel"><a class="color " href="" onclick="showRegisterPage()">REGISTRATE</a></span>
               </p>
             </div>
         </form>
@@ -83,16 +83,16 @@
       <div class="row justify-content-center">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <div>
-          <button type="submit" class="btn rounded-0 btnHome">VER SALDO</button>
+          <button type="submit" class="btn rounded-0 btnHome" onclick="showSaldoPage()">VER SALDO</button>
         </div>
         <div>
-          <button type="submit" class="btn rounded-0 btnHome">CALCULAR TARIFA</button>
+          <button type="submit" class="btn rounded-0 btnHome" onclick="showCalculatorPage()">CALCULAR TARIFA</button>
         </div>
         <div>
-          <button type="submit" class="btn rounded-0 btnHome">PERFIL</button>
+          <button type="submit" class="btn rounded-0 btnHome" onclick="showPorfilePage()">PERFIL</button>
         </div>
         <div>
-          <button type="submit" class="btn rounded-0 btnHome">PREGUNTA FRECUENTES</button>
+          <button type="submit" class="btn rounded-0 btnHome"  onclick="showFaqPage()">PREGUNTA FRECUENTES</button>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
     <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div id="porfileEmail" class="card">
-              <div class="card-body">
+              <div class="card-body" id="mailUser">
                 <!-- Email usuario -->
               </div>
             </div>
@@ -124,21 +124,21 @@
   </section>
   <!-- Calcular Tarifa -->
   <section class="page" id="calculatorPage">
-    <div class="form-group calculatorItems">
+    <div class=" calculatorItems">
         <div class="row justify-content-center">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2" id="calculatorInput">
           </div>
           <div class="row justify-content-center">
              
             <div class="col-sm-6 col-md-6 col-lg-6 mr-auto">
               <form>
                 <label class="my-1 mr-2">Tarifa</label>
-                <select class="custom-select my-1 mr-sm-2 selectCalculate" id="fareCard">
+                <select class="custom-select my-1 mr-sm-2 selectCalculate" id="tarifa">
                   <option selected>Tarifa</option>
-                  <option value="alto">Horario Alto: $760</option>
-                  <option value="medio">Horario Medio: $680</option>
+                  <option value="1">Horario Alto: $760</option>
+                  <option value="2">Horario Medio: $680</option>
                   <option value="3">Horario Bajo: $630</option>
                 </select>
               </form>
@@ -146,7 +146,7 @@
             <div class="col-sm-6 col-md-6 col-lg-6">
               <form>
                 <label class="my-1 mr-2">Tarjeta</label>
-                <select class="custom-select my-1 mr-sm-2 selectCalculate" id="cardNumberSelect1">
+                <select class="custom-select my-1 mr-sm-2 selectCalculate" id="calculatorSelect">
                   <option selected>Nº tarjeta</option>
                   <option value="1"></option>
                   <option value="2"></option>
@@ -164,14 +164,18 @@
           <div class="card mb-3" style="width: 100%;">
             <div class="card-header text-center">COSTO PASAJE</div>
             <div class="card-body cardText text-center">
-              <h1 class="card-text">$</h1>
+                <div id="farePrint">
+
+                </div>
             </div>
           </div>
 
           <div class="card mb-3" style="width: 100%;">
             <div class="card-header text-center">SALDO FINAL</div>
             <div class="card-body cardText text-center">
-              <h1 class="card-text"></h1>
+                <div id="totalPrint">
+
+                </div>
             </div>
           </div>
         </div>
@@ -184,16 +188,16 @@
         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
           <div class="form-group saldoItems">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2" id="saldoInput">
             </div>
-            <select class="custom-select my-1 mr-sm-2" id="cardNumberSelect2">
+            <select class="custom-select my-1 mr-sm-2" id="saldoSelect">
               <option selected>Nº tarjeta</option>
               <option value="1"></option>
             </select>
             <button type="submit" id="btnSaldo" class="btn rounded-0">VER SALDO</button>
           </div>
 
-        <div id="saldo" class="card mb-3" style="width: 100%;">
+        <div id="saldoPrint" class="card mb-3" style="width: 100%;">
          <!-- Acá se imprime saldo -->
           </div>
         </div>
@@ -205,7 +209,7 @@
   </section>
 
    <!-- Peguntas frecuentes -->
-   <section class="page" id="porfilePage">
+   <section class="page" id="faqPage">
       <div class="headerOrange"> 
           <h1 class="title">
               PREGUNTAS FRECUENTES
@@ -253,6 +257,7 @@
   <script src="src/js/data.js"></script>
   <script src="src/js/main.js"></script>
   <script src="src/js/user.js"></script>
+  <script src="src/js/view.js"></script>
 </body>
 
 </html>

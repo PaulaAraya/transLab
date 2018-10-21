@@ -3,46 +3,40 @@ const cardNumberInput = document.getElementById('cardNumberInput');
 //let arrayCard = [];
 
 const addCard = () => {
-  let cardNumber = cardNumberInput.value;
-  console.log(cardNumber);
-  let saveCard = {
-    number: cardNumber
-  }
-  cardRef.push().set(saveCard)
+  
+}
+
+const saveCard = () => {
+  
 }
 
 
-
-
-/*
-const idtarjeta = function () {
-  if (cardNumberSelect1 || cardNumberSelect2) {
-    fetch('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={idtarjeta}')
-      .then(data => data.json())
-      .then(data => {
-        console.log(data)
-        renderInfoCard(data);
-      }).catch(error => {
-        console.error("tarjeta no existe");
-        console.error("ERROR > " + error.stack);
-      });
-  }
+const PrintSaldo = (saldo) => {
+  const saldoPrint = document.getElementById('saldoPrint');
+  saldoPrint.innerHTML += ` 
+    <div class="card-header text-center">SALDO</div>
+    <div class="card-body cardText">
+    <h1 class="card-text text-center"> ${saldo}</h1>
+    </div>
+  `; 
 }
 
-const renderInfoCard = function (data) {
-  data.preventDefault();
-  cardPorfileSave.innerHTML = '';
-  cardPorfileSave.innerHTML = + `
-        <div class="card-header text-center">SALDO</div>
-          <div class="card-body cardText text-center">
-            <h1 class="card-text"> $ ${data.saldoTarjeta}</h1>
-            </div>
-          </div>
-  `
+const calculateCard = (balance, fare) => {
+  const total = balance - fare;
+  PrintTotal(total);
+  PrintFare(fare);
+}
+
+const PrintTotal = (total) => {
+  const totalPrint = document.getElementById('totalPrint');
+  totalPrint.innerHTML += `<h1 class="card-text">$ ${total}</h1>`
+}
+
+const PrintFare = (tarifa) => {
+  saldo.innerHTML += `<h1 class="card-text">$ ${tarifa}</h1>`
 }
 
 
-*/
 
 /*
 //Se crea referencia
