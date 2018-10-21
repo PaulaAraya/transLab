@@ -1,4 +1,3 @@
-const cardNumberInput = document.getElementById('cardNumberInput');
 //const cardSave = document.getElementById('cardSave');
 //let arrayCard = [];
 
@@ -12,7 +11,8 @@ const saveCard = () => {
 
 const PrintSaldo = (saldo) => {
   const saldoPrint = document.getElementById('saldoPrint');
-  saldoPrint.innerHTML += ` 
+  saldoPrint.innerHTML = '';
+  saldoPrint.innerHTML = ` 
     <div class="card-header text-center">SALDO</div>
     <div class="card-body cardText">
     <h1 class="card-text text-center"> ${saldo}</h1>
@@ -29,14 +29,29 @@ const calculateCard = (balance, fares) => {
 
 const PrintTotal = (total) => {
   const totalPrint = document.getElementById('totalPrint');
-  totalPrint.innerHTML += `<h1 class="card-text">$ ${total}</h1>`
+  farePrint.innerHTML = '';
+  totalPrint.innerHTML = `
+  <div class="card-header text-center">SALDO FINAL</div>
+  <div class="card-body cardText text-center">
+  <h1 class="card-text">$ ${total}</h1>           
+  </div>`
 }
 
 const PrintTarifa = (tarifa) => {
   const farePrint = document.getElementById('farePrint');
-  farePrint.innerHTML += `<h1 class="card-text">$ ${tarifa}</h1>`
+  farePrint.innerHTML = '';
+  farePrint.innerHTML = `
+    <div class="card-header text-center">COSTO PASAJE</div>
+    <div class="card-body cardText text-center">
+      <h1 class="card-text">$ ${tarifa}</h1>  
+    </div>
+  `;
 }
 
+const clearInput = () => {
+  document.getElementById('cardNumberInput').value = '';
+  document.getElementById('calculatorInput').value = '';
+}
 
 
 /*

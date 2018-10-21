@@ -7,10 +7,12 @@ const cardNumber = function () {
       dataBipCard = bipData;
       //Imprimir saldo 
       PrintSaldo(dataBipCard.saldoTarjeta);
+      clearInput();
     })
     .catch(error => {
       console.error('error procesando tu información');
       console.error('ERROR' + error.stack);
+      alert('Ingrese nuevamente el número de su tarjeta');
     });
 }
 
@@ -29,31 +31,11 @@ const cardFare = function () {
       //Calcular saldo 
       calculateCard(balanceCard, fareService);
       PrintTarifa(fare);
+      clearInput();
     })
     .catch(error => {
       console.error('error procesando tu información');
       console.error('ERROR' + error.stack);
+      alert('Ingrese nuevamente el número de su tarjerta');
     });
 }
-/*
-const renderInfoCard = function (data) {
-  data.preventDefault();
-  cardPorfileSave.innerHTML = '';
-  cardPorfileSave.innerHTML = + `
-        <div class="card-header text-center">SALDO</div>
-          <div class="card-body cardText text-center">
-            <h1 class="card-text"> $ ${data.saldoTarjeta}</h1>
-            </div>
-          </div>
-  `
-}
-
-const PrintNumberCard1 = (event) => {
-  event.preventDefault();
-  const cardNumberInput = document.getElementById('cardNumberInput').value;
-  cardPorfileSave.innerHTML = '';
-  
-  
-};
-
-*/
