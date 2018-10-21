@@ -10,7 +10,6 @@ const saveCard = () => {
   
 }
 
-
 const PrintSaldo = (saldo) => {
   const saldoPrint = document.getElementById('saldoPrint');
   saldoPrint.innerHTML += ` 
@@ -21,10 +20,11 @@ const PrintSaldo = (saldo) => {
   `; 
 }
 
-const calculateCard = (balance, fare) => {
-  const total = balance - fare;
+const calculateCard = (balance, fares) => {
+  let balanceCard = balance;
+  let fare = fares;
+  const total = balanceCard - fare;
   PrintTotal(total);
-  PrintFare(fare);
 }
 
 const PrintTotal = (total) => {
@@ -32,8 +32,9 @@ const PrintTotal = (total) => {
   totalPrint.innerHTML += `<h1 class="card-text">$ ${total}</h1>`
 }
 
-const PrintFare = (tarifa) => {
-  saldo.innerHTML += `<h1 class="card-text">$ ${tarifa}</h1>`
+const PrintTarifa = (tarifa) => {
+  const farePrint = document.getElementById('farePrint');
+  farePrint.innerHTML += `<h1 class="card-text">$ ${tarifa}</h1>`
 }
 
 

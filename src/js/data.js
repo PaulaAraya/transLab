@@ -17,13 +17,18 @@ const cardNumber = function () {
 const cardFare = function () {
   const calculatorInput = document.getElementById('calculatorInput').value;
   const calculatorSelect = document.getElementById('calculatorSelect').value;
-  const fare = document.getElementById('fareCard').value;
+  const fare = document.getElementById('tarifa').value;
       fetch(`https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${calculatorInput || calculatorSelect}`)
     .then(response => response.json())
     .then(bipData => {
-      dataBipCard = bipData;
+      let dataBipCard = bipData;
+      let balance = dataBipCard.saldoTarjeta;
+      balance = balance.replace('$','')
+      balanceCard = parseInt(balance);
+      fareService = parseInt(fare);
       //Calcular saldo 
-      calculateCard(dataBipCard.saldoTarjeta, fare);
+      calculateCard(balanceCard, fareService);
+      PrintTarifa(fare);
     })
     .catch(error => {
       console.error('error procesando tu información');

@@ -23,7 +23,7 @@ btnSaldo.addEventListener('click', () => {
 
 //Calcula saldo con tarifa
 btnCalculate.addEventListener('click', () =>{
-  cardNumber();
+  cardFare();
 });
 
 //Registro de Usuario
