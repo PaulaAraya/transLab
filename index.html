@@ -14,12 +14,38 @@
 </head>
 
 <body>
+    <input type="checkbox" id="menu_toogle">
+    <header style="
+    margin-bottom: 0px;">
+       
+        <label for="menu_toogle" class="pointer open" style="
+        margin-left: 10px;
+        margin-right: 10px;">
+            <i class="fas fa-bars"></i>
+        </label>    
+    </header>
+    
+    <label for="menu_toogle" id="fullscreen_toogle">
+    </label>
+    
+    <div class="menu" style="z-index: 100;"> 
+        <label class="close pointer" for="menu_toogle"><i class="fas fa-times"></i></label>
+        <ul>
+            <li><i class="fas fa-dollar-sign"></i> Ver Saldo</li>
+            <li><i class="fas fa-th"></i> Calcular Tarifa</li>
+            <li> <i class="fas fa-user"></i> Perfil</li>
+            <li> <i class="fas fa-poll-h"></i> Preguntas Frecuentes</li>
+            <li><i class="fas fa-arrow-right"></i> Home</li>
+            <li><i class="fas fa-sign-out-alt"></i> LogOut</li> 
+        </ul>
+    </div>
+    
   <!-- login -->
   <section class="page" id="logInPage">
-    <div class="row">
-      <div class="col-sm-4 offset-sm-4">
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <img src="src/img/imagen.png" id="logo" alt="logo">
-        <form>
+        <form></form>
           <div class="form-group" id="login">
             <input type="email" id="emailUser" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
             <input type="password" id="passwordUser" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Contraseña">
@@ -39,24 +65,23 @@
   </section>
   <!-- Register -->
   <section class="page" id="registerPage">
-    <div class="row">
-      <div class="col-sm-4 offset-sm-4">
-        <form class="formRegister">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="formRegister">
           <div class="form-group" id="Register">
             <input type="email" id="emailNewUser" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp"
               placeholder="Correo Electronico">
             <input type="password" id="passwordNewUser" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Contraseña">
             <button id="btnRegister" type="submit" class="btn rounded-0" style="width: 100%;">REGISTRAR</button>
           </div>
-        </form>
+        </div>
       </div>
-      <div class="col-sm-4"></div>
     </div>
   </section>
   <!-- Home -->
   <section class="page" id="homePage">
-    <div class="row align-items-center">
-      <div class="col-sm-4 offset-sm-4">
+      <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <div>
           <button type="submit" class="btn rounded-0 btnHome">VER SALDO</button>
         </div>
@@ -70,47 +95,44 @@
           <button type="submit" class="btn rounded-0 btnHome">PREGUNTA FRECUENTES</button>
         </div>
       </div>
-      <div class="col-sm-4"></div>
     </div>
   </section>
-  <!-- Perfil Agregar tarjeta -->
+  <!-- Perfil Usuario Agregar tarjeta -->
   <section class="page" id="porfilePage">
-    <div id="porfilePhoto"> </div>
-    <div class="row align-items-center">
-      <div class="col-sm-4 offset-sm-4">
-        <form>
-          <div class="form-group" id="card">
-
+    <div class="headerOrange"> 
+        
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div id="porfileEmail" class="card">
               <div class="card-body">
                 <!-- Email usuario -->
               </div>
             </div>
 
-            <input type="number" class="form-control-sm rounded-0" id="cardNumberInput" aria-describedby="emailHelp" placeholder="Numero de tarjeta">
+            <input type="text" class="form-control-sm rounded-0" id="cardNumberInput" placeholder="Numero de tarjeta">
 
-            <button type="submit" id="btnAddCard" class="btn rounded-0" style="width: 100%;">AGREGAR TARJETA</button>
+            <button type="submit" id="btnAddCard"  class="btn rounded-0" style="width: 100%;">AGREGAR TARJETA</button>
           </div>
-
-          <div id="cardPorfileSave" class="card">
-              <!-- tarjeta gurdada -->
-            </div>
-          </div>
-        </form>
       </div>
-      <div class="col-sm-4"></div>
+      <div id="cardSave" style="width: 289px; height: 30px;">
+          sfdfdgdgfgdgddgs
+                <!-- tarjeta gurdada -->
+             
+      </div>
     </div>
   </section>
   <!-- Calcular Tarifa -->
   <section class="page" id="calculatorPage">
     <div class="form-group calculatorItems">
-      <div class="row align-items-center">
-        <div class="col-sm-4 offset-sm-4">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
           </div>
-          <div class="row justify-content-between">
-            <div class="col-sm-4 mr-auto">
+          <div class="row justify-content-center">
+             
+            <div class="col-sm-6 col-md-6 col-lg-6 mr-auto">
               <form>
                 <label class="my-1 mr-2">Tarifa</label>
                 <select class="custom-select my-1 mr-sm-2 selectCalculate" id="fareCard">
@@ -121,7 +143,7 @@
                 </select>
               </form>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-6 col-lg-6">
               <form>
                 <label class="my-1 mr-2">Tarjeta</label>
                 <select class="custom-select my-1 mr-sm-2 selectCalculate" id="cardNumberSelect1">
@@ -136,7 +158,7 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-sm-4 offset-sm-4">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
           <button type="submit" id="btnCalculate" class="btn rounded-0">CALCULAR</button>
 
           <div class="card mb-3" style="width: 100%;">
@@ -153,15 +175,13 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4"></div>
       </div>
     </div>
   </section>
   <!-- Saldo Tarjeta -->
   <section class="page" id="saldoPage">
-    <div class="row align-items-center">
-      <div class="col-sm-4 offset-sm-4">
-        <form>
+      <div class="row justify-content-center">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
           <div class="form-group saldoItems">
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Numero tarjeta" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -172,7 +192,7 @@
             </select>
             <button type="submit" id="btnSaldo" class="btn rounded-0">VER SALDO</button>
           </div>
-        </form>
+
         <div id="saldo" class="card mb-3" style="width: 100%;">
          <!-- Acá se imprime saldo -->
           </div>
@@ -181,9 +201,31 @@
     </div>
     </div>
     </div>
-    <div class="col-sm-4"></div>
     </div>
   </section>
+
+   <!-- Peguntas frecuentes -->
+   <section class="page" id="porfilePage">
+      <div class="headerOrange"> 
+          <h1 class="title">
+              PREGUNTAS FRECUENTES
+          </h1>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+              <li class="nav-item dropdown">
+                  <p class="nav-link dropdown-toggle faq" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Problemas y cuidados de tarjeta bip!</p>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </li>
+        </div>
+      </div>
+    </section>
   <!-- firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
   <script>
@@ -207,7 +249,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <!-- Js -->
-  <script src=""></script>
+  <script src="src/js/card.js"></script>
   <script src="src/js/data.js"></script>
   <script src="src/js/main.js"></script>
   <script src="src/js/user.js"></script>

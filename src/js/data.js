@@ -1,22 +1,4 @@
-/*
-
-fetch('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={id}')
-.then(response => response.json())
-.then(bipJSON => {
-  bipCards = bipJSON
-  console.log(bipCards);
-})
-.catch(error => {
-  console.error("tarjeta no existe");
-  console.error("ERROR > " + error.stack);
-});
-*/
-
-const cardNumberSelect1 = document.getElementById('cardNumberSelect1').value;
-const cardNumberSelect2 = document.getElementById('cardNumberSelect2').value;
-
-
-const idtarjeta = function () {
+/*const idtarjeta = function () {
   if (cardNumberSelect1 || cardNumberSelect2) {
     fetch('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={idtarjeta}')
       .then(data => data.json())
@@ -42,7 +24,7 @@ const renderInfoCard = function (data) {
   `
 }
 
-const PrintNumberCard = (event) => {
+const PrintNumberCard1 = (event) => {
   event.preventDefault();
   const cardNumberInput = document.getElementById('cardNumberInput').value;
   cardPorfileSave.innerHTML = '';
@@ -55,3 +37,5 @@ const PrintNumberCard = (event) => {
       <ul class="list-group list-group-flush" style="width: 100%;">
   ` ;
 };
+
+*/

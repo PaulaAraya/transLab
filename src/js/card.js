@@ -1,7 +1,20 @@
-const cardNumberSelect1 = document.getElementById('cardNumberSelect1').value;
-const cardNumberSelect2 = document.getElementById('cardNumberSelect2').value;
+const cardNumberInput = document.getElementById('cardNumberInput');
+//const cardSave = document.getElementById('cardSave');
+//let arrayCard = [];
+
+const addCard = () => {
+  let cardNumber = cardNumberInput.value;
+  console.log(cardNumber);
+  let saveCard = {
+    number: cardNumber
+  }
+  cardRef.push().set(saveCard)
+}
 
 
+
+
+/*
 const idtarjeta = function () {
   if (cardNumberSelect1 || cardNumberSelect2) {
     fetch('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={idtarjeta}')
@@ -28,19 +41,9 @@ const renderInfoCard = function (data) {
   `
 }
 
-const PrintNumberCard = (event) => {
-  event.preventDefault();
-  const cardNumberInput = document.getElementById('cardNumberInput').value;
-  cardPorfileSave.innerHTML = '';
-  cardPorfileSave.innerHTML += `
-  <ul class="list-group list-group-flush" style="width: 100%;">
-             <li class="list-group-item">
-             <p class="card-text text-justify">${cardNumberInput}</p>
-             </li>
-           </ul>
-      <ul class="list-group list-group-flush" style="width: 100%;">
-  ` ;
-};
+
+*/
+
 /*
 //Se crea referencia
 const cardRef = firebase.database().ref('card/');

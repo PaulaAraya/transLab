@@ -1,25 +1,38 @@
 // Botones
 const btnAddCard = document.getElementById('btnAddCard');
+
+const btnRegister = document.getElementById('btnRegister');
+/*
 const btnCalculate = document.getElementById('btnCalculate');
 const btnSaldo = document.getElementById('btnSaldo');
-const btnRegister = document.getElementById('btnRegister');
+
 const btnLogIn = document.getElementById('btnLogIn');
-const btnLogOut = document.getElementById('btnLogOut');
+const btnLogOut = document.getElementById('btnLogOut');*/
 
 // Agregar Tarjeta
-btnAddCard.addEventListener('click', PrintNumberCard);
+btnAddCard.addEventListener('click', () => {
+  addCard();
+});
 
+
+
+
+//Registro de Usuario
+btnRegister.addEventListener('click', () => {
+  createUser();
+});
+
+/*
 //Ver Saldo Tarjeta
 btnSaldo.addEventListener('click', renderInfoCard);
-/*
+
 //Iniciar Sesión
 btnLogIn.addEventListener('click', logIn);
 
 //Salir Sesión
 //btnLogOut.addEventListener('click', logOut);
 
-//Registro de Usuario
-btnRegister.addEventListener('click', createUser);
+
 
 //Agregar Numero de tarjeta
 btnAddCard.addEventListener('click', addCard);

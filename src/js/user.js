@@ -1,19 +1,38 @@
 // Crear Usuario
-const createUser = function (event) {
-	event.preventDefault();
+const createUser = function () {
 	const email = document.getElementById('emailNewUser').value;
 	const password = document.getElementById('passwordNewUser').value;
 
 	firebase.auth().createUserWithEmailAndPassword(email, password)
 		.then(function (data) {
 			console.log(data)
-			viewHome(); //Iniciada la sesión cambia a la pagina principal 
+			getUser();
+			// viewHome(); Iniciada la sesión cambia a la pagina principal 
 		}).catch(function (error) {
 			console.log(error)// cada vez que exista un error 
 		});
 	return false; // false para que la pagina no se vuelva a recargar
 };
 
+// Get User
+
+const getUser = function() {
+	firebase.auth().onAuthStateChanged(function(user){
+		if(user){
+			logInPage.style.display = 'none';
+  		registerPage.style.display = 'none';
+  		porfilePage.style.display = 'none';
+  		calculatorPage.style.display = 'none';
+  		saldoPage.style.display = 'none';
+			faqPage.style.display = 'none';
+			homePage.style.display = 'block';
+  		menu.style.display = 'block';
+  		nav.style.display = 'block';
+		}else{
+			showlogInPage();
+		}
+	})
+}
 /*
 // Iniciar Sesión
 const logIn = function () {

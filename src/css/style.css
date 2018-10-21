@@ -6,6 +6,109 @@ button {
   font-size: 10px;
 }
 
+/* NAVBAR */
+
+
+input[type=checkbox]{
+  display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+input[type=checkbox]:checked ~ .menu{
+  transform: translateX(0);
+}
+
+input[type=checkbox]:checked ~ #fullscreen_toogle{
+  display: block;
+}
+
+/* You can click any place of the screen to close the menu but in the menu itself */
+#fullscreen_toogle{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: black;
+  opacity: 0.3;
+}
+/* Style */
+body{
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+header{
+  padding: 0;
+  margin-bottom: 0;
+  margin-bottom: 70px;
+  background-color: #3e3f41;
+  color: white;
+}
+
+header span{
+text-align: center;
+}
+
+main{
+  padding: 0 10%;
+}
+
+/* Menu style */
+
+.fa-bars{
+color: white;
+font-size: 35px;
+}
+
+.menu{
+  overflow-y: auto;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%);
+  transition: all 0.25s;
+  background-color: white;
+  width: 300px;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+  padding: 15px;
+  padding-left: 10%;
+  color: #3e3f41;
+}
+
+li i {
+color: #f6a800;
+}
+
+ul{
+  padding-left: 0;
+  margin-top: 95px;
+}
+
+.close{
+  float: right;
+  margin-right: 20px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.open,.close{
+  padding: 20px;
+}
+
+.close:hover{
+color: black;
+background-color: white;
+}
+
+
 /* LOGIN */
 #logInPage{
   background-color: #3e3f41;
@@ -67,7 +170,7 @@ button {
   height: 100vh;
 }
 
-#porfilePhoto{
+.headerOrange{
   background-color: #f6a800;
   height: 40vh;
 }
@@ -127,4 +230,15 @@ button {
   margin-right: 25%;
   width: 50%;
   height: auto;
+}
+
+.title{
+  text-align: center;
+  color: white;
+  padding: 10%;
+}
+
+.faq{
+  width: 100%;
+  background-color: white;
 }
