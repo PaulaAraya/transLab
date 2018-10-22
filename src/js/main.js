@@ -1,3 +1,4 @@
+
 // Botones
 const btnAddCard = document.getElementById('btnAddCard');
 const btnRegister = document.getElementById('btnRegister');
