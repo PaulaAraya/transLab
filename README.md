@@ -4,7 +4,7 @@ Es una una aplicación web para consultar nuestro saldo Bip!, entre otras puedes
 también calcula el saldo de la tarjeta con las distintas tarifas de costo del pasaje.
 
 ![App TransLab](https://github.com/PaulaAraya/portafolio/blob/master/assets/img/transLab2.png?raw=true)
-Desarollado para [Laboratoria](http://laboratoria.la)
+
 
 ## Tecnologias y plataformas de desarrollo web
 - JS vanilla
@@ -16,5 +16,5 @@ Desarollado para [Laboratoria](http://laboratoria.la)
 - consumo de APIs
 
 
-## Desarrollado para
-[Laboratoria](https://www.laboratoria.la/)
+## Desarrollado 
+para [Laboratoria](https://www.laboratoria.la/)
