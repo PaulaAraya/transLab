@@ -1,14 +1,7 @@
-window.onload = () =>{
-  showlogInPage();
-}
-
 // Botones
 const btnAddCard = document.getElementById('btnAddCard');
-
 const btnRegister = document.getElementById('btnRegister');
-
 const btnCalculate = document.getElementById('btnCalculate');
-
 const btnSaldo = document.getElementById('btnSaldo');
 
 // Agregar Tarjeta
